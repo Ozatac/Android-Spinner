@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6ACEDF"
+    tools:context=".IkinciActivity">
+
+    <TextView
+        android:id="@+id/tvSonuc"
+        android:layout_width="235dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="18dp"
+        android:gravity="center"
+        android:hint="NAME"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtSonuc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSonuc"
+        android:layout_width="236dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="39dp"
+        android:gravity="center"
+        android:hint="NO"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnGeri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSonuc" />
+
+    <Button
+        android:id="@+id/btnGeri"
+        android:layout_width="151dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="323dp"
+        android:onClick="onClick"
+        android:text="Geri"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtSonuc"
+        app:layout_constraintTop_toBottomOf="@+id/txtSonuc" />
+</androidx.constraintlayout.widget.ConstraintLayout>
